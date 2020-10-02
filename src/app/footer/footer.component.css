@@ -1,0 +1,43 @@
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #001523;
+  color: white;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0rem 10rem;
+  }
+  .footer-text{
+    font-size: 10px;
+    line-height: 11px;
+    font-family: Gotham-Book;
+  }
+  ul { margin:0; padding:0;
+    color:#000; /* Base text color for the menu */
+   }
+   ul li { float:left; list-style:none; /* Makes the list items go horizontally in lieu of default vertical display */ }
+   ul li:after {
+    content:"|"; /* Or go Facebook style and use "·" (the interpunct character) for separators */
+    color:#666; /* You may want to make the separators a bit more subtle than the base text color */
+   }
+   ul li:last-child:after { content:""; /* No separator for the last item in the list */ }
+   ul li a {
+    margin:0 8px; /* Set margins around the links */
+    color: #ffffff; /* Text colors for the links */
+   }
+
+   @media (max-width: 767px) {
+    .logo {
+      width: 18rem;
+      margin-left: 1rem;
+       }
+       .footer{
+         padding: 1rem;
+       }
+
+  }

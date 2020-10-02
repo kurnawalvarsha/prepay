@@ -1,0 +1,67 @@
+<main>
+<div class="container-fluid prepay-container">
+  <div class="row prepay-section justify-content-between">
+      <div class=" col-md-5 ">
+          <div class="login-section mr-md-60">
+                <div class="login-header" style="background-color: #123C61;">
+                  <h1 >Now you can prepay for your service!</h1>
+                </div>
+                <div class="login-body prepay-desc">
+                    <div class="desc-css">
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sedLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6 ">
+                      <button class="btn-css-orange btn-block mt-20">Recharge Now</button>
+                      </div>
+                    </div>
+                 </div>
+          </div>
+        </div>
+
+      <div class=" col-md-5  offset-md-1">
+        <div class="login-section ml-md-60">
+          <form class="form-signin" #f="ngForm" (ngSubmit)="signIn(f.value)">
+          <div class="login-header hello-bg">
+            <h1 >Hello!</h1>
+          </div>
+          <div class="login-body">
+                  <p class="login-acct"> Login to your account</p>
+                   <div *ngIf="invalidLogin" class="alert alert-danger">Invalid username and/or password.</div>
+                    <div class="form-group mt-20">
+                          <label class="label-css">Email</label>
+                          <input type="text" id="username" name="username"
+                          ngModel class="form-control  input-box-css mt-10"
+                          placeholder="username" required
+                          autofocus>
+                      </div>
+                    <div class="form-group mt-20">
+                      <label class="label-css">Password</label>
+                      <input type="password" id="inputPassword"
+                       name="password" ngModel class="form-control input-box-css mt-10"
+                       placeholder="Password" required>
+                    </div>
+
+
+         </div>
+          <div class="login-footer">
+             <div class="container">
+               <div class="row">
+                 <div class="col-md-6 ">
+                  <button class="btn-css-orange btn-block" type="submit">Login</button>
+                 </div>
+                 <div class="col-md-6">
+                  <button class="btn-css-orange btn-block" style="background-color: transparent;color: #EA7926;">
+                    Forgot Password?</button>
+                </div>
+               </div>
+             </div>
+          </div>
+        </form>
+      </div>
+</div>
+</div>
+</div>
+
+</main>

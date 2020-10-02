@@ -1,0 +1,115 @@
+/*------custom css for mobile-----*/
+
+
+main{
+  flex: 1;
+  overflow-y: auto;
+  height: 92vh;
+  padding-bottom: 12rem;
+}
+.prepay-section{
+  /* background-color: #ffffff; */
+  margin:5rem 10rem;
+  /* height: 800px; */
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  max-height: 100%;
+}
+.prepay-container{
+  margin-top: -1px;
+  background-color: #123c61;
+}
+
+.login-section{
+
+  border-radius: 8px;
+
+}
+.login-header{
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  font-size: 18px;line-height: 20px;
+
+  color: #ffffff;
+  font-family: Gotham-Bold;
+}
+.login-body{
+  background-color: #ffffff;
+  padding: 3rem;
+}
+.login-footer{
+  height: 70px;
+  background-color: #ffffff;
+  /* padding: 3rem; */
+  display: flex;
+  align-items: center;
+  /* padding-bottom: 5rem; */
+  padding: 0px 0px 5rem 3rem;
+}
+.hello-bg{
+  background-color: #3D86C6;
+  border-radius: 8px 8px 0px 0px;
+}
+.login-acct{
+  font-size: 16px;
+  line-height: 18px;
+  color:#404041;
+  font-family: Gotham-Medium;
+}
+.desc-css{
+  max-height: 200px;
+  overflow-y: auto;
+}
+.prepay-desc{
+  font-size: 16px;
+  color: #6d5e5e;
+  font-family: Gotham-Book;
+
+}
+.label-css{
+  font-size: 16px;
+  line-height: 18px;
+  color:#262626;
+  font-family: Gotham-Book;
+}
+.input-box-css{
+  height: 45px;
+  border-radius: 4px;
+  border: 1px solid #DBDBDB;
+  font-size: 16px;
+
+}
+.mt-10{
+  margin-top: 10px;
+}
+.mt-20{
+  margin-top: 20px;
+}
+.btn-css-orange{
+  background-color: #EA7926;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 14px;
+  border: 1px solid #EA7926;
+  font-family: Gotham-Book;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .col-md-5 {
+      margin-top:40px;
+      padding: 0px;
+     }
+    .prepay-section{
+      margin: 1rem;
+    }
+    .login-footer{
+      height: 100%;
+      padding: 1rem;
+    }
+}

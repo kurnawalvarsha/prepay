@@ -1,0 +1,75 @@
+.header{
+  background-color: #3d86c6;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 1.6rem; */
+  /* flex-flow: row wrap; */
+  max-width: 100%;
+  }
+
+.nav-header {
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+}
+.nav-header > * {
+  padding: 0 2rem;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  height: 15px;
+  margin-left: 3rem;
+}
+.tatalogo{
+  height: 44px;
+  /* margin-right: 4rem; */
+}
+.logintext{
+color:#ffffff;
+font-size: 11px;
+line-height: 12px;
+text-transform: uppercase;
+font-weight: bold;
+margin-right: 15px;
+}
+.user-logo{
+  height: 23px;
+}
+.login-section{
+  display: inline-block; display: flex;
+  align-items: center;margin-top: 15px;
+}
+.logged-users-section{
+  display: flex;
+}
+.image-box{
+  margin-right: 3rem;
+}
+.image-item{
+  vertical-align: top;
+  display: inline-block;
+  /* To horizontally center images and caption */
+  text-align: center;
+  padding: 1rem;
+  color: #ffffff;
+
+}
+.image-label{
+  display: block;
+  margin-top: 10px;
+  font-size: 9px;
+  line-height: 9px;
+  font-family: Gotham-Medium;
+}
+@media (max-width: 767px) {
+  .logo {
+    width: 18rem;
+    margin-left: 1rem;
+     }
+
+}

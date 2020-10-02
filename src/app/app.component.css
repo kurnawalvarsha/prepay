@@ -1,0 +1,12 @@
+.container{
+  max-width:100%;
+  width: 100%;
+  position:fixed;
+  /* max-width: 120rem; */
+  margin: 0px auto;
+  background-color: #fff;
+  background-color: #123c61;
+   /*box-shadow: var(--shadow-dark); */
+  min-height: 50rem;
+  padding: 0;
+  }
