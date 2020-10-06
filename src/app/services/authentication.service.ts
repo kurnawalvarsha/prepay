@@ -11,9 +11,7 @@ export class AuthenticationService {
     public currentUser: Observable<User>;
 
     constructor(private http: HttpClient) {
-      console.log(http);
-
-        this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currentUser')));
+         this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currentUser')));
         this.currentUser = this.currentUserSubject.asObservable();
     }
 
@@ -37,5 +35,13 @@ export class AuthenticationService {
         // remove user from local storage to log user out
         localStorage.removeItem('currentUser');
         this.currentUserSubject.next(null);
+    }
+    isLoggedIn(){
+        console.log(JSON.parse(localStorage.getItem('currentUser')));
+      var token=JSON.parse(localStorage.getItem('currentUser'));
+        if(token!=null)
+        return true;
+        else 
+        return false;
     }
 }

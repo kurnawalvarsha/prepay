@@ -1,12 +1,6 @@
 /*------custom css for mobile-----*/
 
 
-main{
-  flex: 1;
-  overflow-y: auto;
-  height: 92vh;
-  padding-bottom: 12rem;
-}
 .prepay-section{
   /* background-color: #ffffff; */
   margin:5rem 10rem;

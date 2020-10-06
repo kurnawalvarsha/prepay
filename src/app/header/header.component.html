@@ -1,37 +1,42 @@
 <header class="header">
-
+  <div>
+    <img
+    src="assets/images/svg/menu.svg"  *ngIf="authService.isLoggedIn()"
+    alt="Tata Communications" class="logo" style="width: auto;"
+   />
   <img
   src="assets/images/svg/logo.svg"
   alt="Tata Communications" class="logo"
  />
+ </div>
   <nav class="nav-header">
-      <div class="header_login">
+      <div class="header_login"  *ngIf="!authService.isLoggedIn()">
           <div class="login-section">
             <label for="" class="logintext">Login</label>
             <img src="assets/images/svg/user-circle.svg" alt="Login User" class="user-logo">
           </div>
       </div>
-      <div class="logged-users-section">
+      <div class="logged-users-section"  *ngIf="authService.isLoggedIn()">
 
         <div class="image-box">
           <div class="image-item">
-            <img src="assets/images/svg/user-circle.svg" alt="Login User" class="user-logo">
+            <img src="assets/images/svg/cart.svg" alt="My Cart" class="user-logo">
 
             <span class="image-label">My Cart</span>
           </div>
           </div>
           <div class="image-box">
             <div class="image-item">
-              <img src="assets/images/svg/user-circle.svg" alt="Login User" class="user-logo">
+              <img src="assets/images/svg/help.svg" alt="Help" class="user-logo">
 
-              <span class="image-label">My Cart</span>
+              <span class="image-label">Help</span>
             </div>
             </div>
             <div class="image-box">
               <div class="image-item">
-                <img src="assets/images/svg/user-circle.svg" alt="Login User" class="user-logo">
+                <img src="assets/images/svg/user-acct.svg" alt="My Account" class="user-logo">
 
-                <span class="image-label">My Cart</span>
+                <span class="image-label">My Account</span>
               </div>
               </div>
       </div>

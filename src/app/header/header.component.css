@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   /* font-size: 1.6rem; */
-  /* flex-flow: row wrap; */
+ flex-flow: row wrap;
   max-width: 100%;
   }
 
