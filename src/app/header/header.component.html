@@ -1,5 +1,5 @@
-<header class="header">
-  <div>
+<nav class="navbar navbar-expand-sm navbar-light " style="  background-color: #3d86c6;  ">
+  <a class="navbar-brand" href="#">
     <img
     src="assets/images/svg/menu.svg"  *ngIf="authService.isLoggedIn()"
     alt="Tata Communications" class="logo" style="width: auto;"
@@ -8,41 +8,60 @@
   src="assets/images/svg/logo.svg"
   alt="Tata Communications" class="logo"
  />
- </div>
-  <nav class="nav-header">
-      <div class="header_login"  *ngIf="!authService.isLoggedIn()">
-          <div class="login-section">
-            <label for="" class="logintext">Login</label>
-            <img src="assets/images/svg/user-circle.svg" alt="Login User" class="user-logo">
-          </div>
-      </div>
-      <div class="logged-users-section"  *ngIf="authService.isLoggedIn()">
+  </a>
+  <button class="navbar-toggler" (click)="collapse=!collapse" type="button" aria-expanded="false"   aria-label="Toggle navigation" >
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-        <div class="image-box">
-          <div class="image-item">
-            <img src="assets/images/svg/cart.svg" alt="My Cart" class="user-logo">
-
-            <span class="image-label">My Cart</span>
+  <div class="navbar-collapse" (click)="collapse=true" [hidden]="collapse">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"  *ngIf="!authService.isLoggedIn()">
+        <a class="nav-link" href="#">
+          <div class="image-box">
+            <div class="image-item">
+              <img src="assets/images/svg/user-circle.svg" alt="My Cart" class="user-logo">
+               <span class="image-label">Login</span>
+            </div>
           </div>
+        </a>
+      </li>
+      <li class="nav-item"  *ngIf="authService.isLoggedIn()">
+        <a class="nav-link" href="#">
+          <div class="image-box">
+            <div class="image-item">
+              <img src="assets/images/svg/cart.svg" alt="My Cart" class="user-logo">
+               <span class="image-label">My Cart</span>
+            </div>
           </div>
+        </a>
+      </li>
+      <li class="nav-item"  *ngIf="authService.isLoggedIn()">
+        <a class="nav-link" href="#">
           <div class="image-box">
             <div class="image-item">
               <img src="assets/images/svg/help.svg" alt="Help" class="user-logo">
-
-              <span class="image-label">Help</span>
+               <span class="image-label">Help</span>
             </div>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item"  *ngIf="authService.isLoggedIn()">
+        <a class="nav-link" href="#">
+          <div class="image-box">
+            <div class="image-item">
+              <img src="assets/images/svg/user-acct.svg" alt="My Account" class="user-logo">
+               <span class="image-label">My Account</span>
             </div>
-            <div class="image-box">
-              <div class="image-item">
-                <img src="assets/images/svg/user-acct.svg" alt="My Account" class="user-logo">
+          </div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <span class="image-label"></span>
+          <img src="assets/images/svg/tata-logo.svg" alt="Tata logo" class="tatalogo">
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-                <span class="image-label">My Account</span>
-              </div>
-              </div>
-      </div>
-      <div>
-        <img src="assets/images/svg/tata-logo.svg" alt="Tata logo" class="tatalogo">
-       </div>
- </nav>
-
-</header>
