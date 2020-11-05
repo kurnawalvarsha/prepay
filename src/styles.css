@@ -64,3 +64,79 @@ main{
 .light-white-bg{
 background-color: #F5F7F6; 
 }
+.dashboard-box{
+  margin-left:20rem;
+  margin-top:5rem;
+  margin-right: 5rem;
+}
+.heading-text{
+  font-size: 24px;
+  font-family: Gotham-Book;
+  color: #ffffff;
+  line-height: 26px;
+}
+.content-text{
+  font-size: 14px;
+  font-family: Gotham-Book;
+  color: #ffffff;
+  line-height: 15px;
+}
+.ornge-btn-css{
+  background-color: #EA7926;
+  border: 1px solid #EA7926;
+  border-radius: 2px;
+  color: #ffffff;
+  padding: 1rem 2rem;
+ 
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
+.bottom-border{
+  border-bottom: 2px solid lightgrey;
+  margin-top: 1rem;
+  opacity: 0.2;
+}
+.flex-layout{
+  display: flex;
+  justify-content: space-between;
+}
+.btn-css-orange{
+  background-color: #EA7926;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 14px;
+  border: 1px solid #EA7926;
+  font-family: Gotham-Book;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.trans-btn{
+  background-color: transparent;color: #EA7926;
+}
+.mt-3rem{
+  margin-top: 3rem;
+}
+@media screen and (max-width: 700px) {
+  nav {
+     width: 100%;
+     height: auto;
+     position: relative;
+     display: flex;
+     flex-flow: row wrap;
+  }
+  nav a {float: left;}
+  div.content {margin-left: 0;}
+  .dashboard-box{
+   margin: 2rem;
+ }
+  }
+  .cdk-overlay-connected-position-bounding-box {
+    position: relative !important;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

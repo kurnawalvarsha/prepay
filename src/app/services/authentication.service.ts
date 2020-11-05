@@ -20,9 +20,7 @@ export class AuthenticationService {
     }
 
     login(username: string, password: string) {
-      console.log(username, password );
-
-        return this.http.post<any>(`/users/authenticate`, { username, password })
+         return this.http.post<any>(`/users/authenticate`, { username, password })
             .pipe(map(user => {
                 // store user details and jwt token in local storage to keep user logged in between page refreshes
                 localStorage.setItem('currentUser', JSON.stringify(user));
@@ -37,7 +35,6 @@ export class AuthenticationService {
         this.currentUserSubject.next(null);
     }
     isLoggedIn(){
-        console.log(JSON.parse(localStorage.getItem('currentUser')));
       var token=JSON.parse(localStorage.getItem('currentUser'));
         if(token!=null)
         return true;

@@ -1,0 +1,60 @@
+<main>
+    <app-sidebar ></app-sidebar>
+    <div class="content">
+        <div class="dashboard-box " >
+            <div class="request-head flex" >
+                    <div style="    margin-right: auto;">
+                        <p class="heading-text">
+                            Request
+                        </p>
+                        <p class="content-text">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.
+                        </p>
+                    </div>
+                    <div>
+                        <a class="ornge-btn-css"><span class="caret-text">Download <span> &#9660;</span>
+                          </span></a>
+              </div>
+  
+            </div>
+           <p class="bottom-border"></p>
+            <div class="req-detail">
+                <div class="container" style="position: relative;">
+                    <div class="panel ">
+                        <div class="panel-heading">Detailed Statement</div>
+                        <div class="panel-body">
+                            <p class="req-date-css">Request Date</p>
+                            <div class="date-range flex">
+                                <div>
+                                    <mat-form-field>
+                                        <div class="date_container">
+                                            <input matInput [matDatepicker]="picker" placeholder="From">
+                                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                            </div>
+                                        <mat-datepicker #picker></mat-datepicker>
+                                        </mat-form-field>
+                                      
+                                </div>
+                                <div style="    margin-left: 5rem;">
+                                    <mat-form-field>
+                                        <div class="date_container">
+                                            <input matInput [matDatepicker]="pickerto" placeholder="To">
+                                            <mat-datepicker-toggle matSuffix [for]="pickerto"></mat-datepicker-toggle>
+                                            </div>
+                                        <mat-datepicker #pickerto></mat-datepicker>
+                                        </mat-form-field>
+                                </div>
+                                
+                          </div>    
+                          
+                          <div class="detail-bottom mt-3rem">
+                        <img src="assets/images/svg/download-btn.svg" alt="">
+                          </div>
+
+                        </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</main>            

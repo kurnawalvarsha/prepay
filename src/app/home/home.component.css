@@ -81,19 +81,7 @@
 .mt-20{
   margin-top: 20px;
 }
-.btn-css-orange{
-  background-color: #EA7926;
-  border-radius: 4px;
-  color: #ffffff;
-  font-size: 14px;
-  border: 1px solid #EA7926;
-  font-family: Gotham-Book;
-  padding: 15px 40px;
-  text-transform: uppercase;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-}
+
 @media (max-width: 767px) {
   .col-md-5 {
       margin-top:40px;

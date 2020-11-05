@@ -1,0 +1,47 @@
+nav {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+   
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 4px 4px 4px #00000029;
+  }
+  nav a {
+    display: block;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    background-color: #2A5F8F;
+    
+  }
+  nav a:hover{
+    cursor: pointer;
+  }
+  nav a.selected {
+    background-color: #123C61;
+    color: rgb(255, 255, 255);
+   
+  }
+  nav a:hover:not(.selected) {
+    background-color: #123C61;
+    color: rgb(0, 0, 0);
+  }
+
+  .image-label{
+    display: block;
+    margin-top: 10px;
+    font-size: 9px;
+    line-height: 9px;
+    font-family: Gotham-Medium;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .icon-color{
+    color: #3D86C6;
+  }

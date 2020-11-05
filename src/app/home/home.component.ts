@@ -12,8 +12,6 @@ import { first } from 'rxjs/operators';
 export class HomeComponent implements OnInit {
  invalidLogin: boolean;
  resultStatus:boolean
-
-
  loading = false;
  users: User[];
 
@@ -21,11 +19,7 @@ export class HomeComponent implements OnInit {
 
  ngOnInit() {
      this.loading = true;
-    //  this.userService.getAll().pipe(first()).subscribe(users => {
-    //      this.loading = false;
-    //      this.users = users;
-    //  });
- }
+}
   constructor(
     private router: Router,
     private authService: AuthenticationService

@@ -1,0 +1,28 @@
+.caret-text{
+    font-size: 10px;
+    font-family: Gotham-Medium;
+}
+.panel-heading{
+    font-family: Gotham-Medium;
+    color: #3F3F3F;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-bottom: 1px solid red;
+}
+.panel-body{
+    background-color: #F1F1F2;
+}
+.req-date-css{
+    color: #4D4F5C;
+    font-size: 14px;
+    font-family: Gotham-Medium; 
+}
+.date_container {        
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mat-calendar-body-cell-content.mat-focus-indicator {
+    position: relative;
+}
